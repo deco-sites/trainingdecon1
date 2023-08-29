@@ -16,7 +16,7 @@ export interface Props {
   title?: string;
   description?: string;
   layout?: {
-    headerAlignment?: "center" | "left";
+    headerAlignment?: "center" | "left" | "right";
     headerfontSize?: "Normal" | "Large";
   };
   cardLayout?: cardLayout;
