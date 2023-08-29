@@ -2,7 +2,7 @@ interface Props {
   title?: string;
   fontSize?: "Normal" | "Large";
   description?: string;
-  alignment: "center" | "left";
+  alignment: "center" | "left" | "right";
   colorReverse?: boolean;
 }
 
@@ -15,6 +15,7 @@ function Header(props: Props) {
             class={`flex flex-col gap-2 ${
               props.alignment === "left" ? "text-left" : "text-center"
             }`}
+            onClick={() => console.log('teste')}
           >
             {props.title &&
               (
